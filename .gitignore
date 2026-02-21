@@ -17,9 +17,9 @@ env/
 # VS Code
 .vscode/
 
-# Model artifacts (large files - optional: remove these lines if you want to commit models)
-models/model.pkl
-models/scaler.pkl
+# Model artifacts
+# models/model.pkl   # uncomment to exclude from git
+# models/scaler.pkl  # uncomment to exclude from git
 
 # Data (raw data usually not committed)
 data/raw/auto-mpg.data
