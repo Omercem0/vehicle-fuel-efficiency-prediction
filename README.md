@@ -1,8 +1,42 @@
-# Vehicle Fuel Efficiency Prediction
+🏎️ AutoMPG Predictor - AI-Driven Fuel Efficiency Analysis
+AutoMPG Predictor is an end-to-end Machine Learning web application designed to predict the fuel efficiency (Miles Per Gallon) of vehicles based on technical specifications. The project leverages advanced regression techniques and is deployed using a modular architecture.
 
-End-to-end machine learning project that predicts a vehicle's fuel efficiency (MPG) using the [Auto MPG dataset](https://archive.ics.uci.edu/ml/datasets/auto+mpg).
+🔗 Live Demo: [https://vehicle-fuel-efficiency-prediction-omer.streamlit.app/]
 
-## Project Structure
+🚀 Key Features
+Hybrid Regression Engine: Instead of a single model, this project implements an Averaging Ensemble combining XGBoost and Lasso Regression to minimize prediction error.
+
+Scientific Data Pipeline: Features a robust preprocessing stage including outlier detection, handling skewed distributions (Log Transformation), and Robust Scaling to manage data variance.
+
+Interactive Insights: Users can input vehicle parameters such as cylinders, horsepower, weight, and model year to get real-time MPG estimations.
+
+🛠️ Engineering Pipeline
+This project is a complete data science product consisting of three core stages:
+
+1. Exploratory Data Analysis (EDA) 📊
+Located in notebooks/eda.ipynb, this phase involves:
+
+Distribution Analysis: Identifying skewness in target variables and applying normal distribution transforms.
+
+Correlation Mapping: Visualizing how weight and displacement impact fuel consumption using Seaborn heatmaps.
+
+Data Cleaning: Managing missing values and removing outliers that degrade model generalization.
+
+2. Model Development (The Engine) ⚙️
+The training pipeline in src/train.py handles:
+
+Advanced Modeling: Utilizing Lasso (L1 Regularization) for feature selection and XGBoost for capturing non-linear patterns.
+
+Performance Metrics: Models are evaluated using Mean Squared Error (MSE), achieving high accuracy through the Averaging ensemble technique.
+
+Artifact Export: Scalers and model weights are serialized into .pkl files for production use.
+
+3. Deployment (The Product) 💻
+Streamlit UI: A lightweight, interactive frontend built to serve the model predictions.
+
+Modular Architecture: Clean separation of concerns between data processing (data_preprocessing.py), model logic (predict.py), and the user interface.
+
+📂 Project Structure
 
 ```
 ml-project/
@@ -24,60 +58,20 @@ ml-project/
 └── README.md
 ```
 
-## Quick Start
+🛠️ Tech Stack
+Frontend: Streamlit
 
-### 1. Install dependencies
+Machine Learning: Scikit-Learn, XGBoost
 
-```bash
-pip install -r requirements.txt
-```
+Data Processing: Pandas, NumPy, SciPy (Stats)
 
-### 2. Add data
+Visualization: Seaborn, Matplotlib
 
-Place the `auto-mpg.data` file into `data/raw/`.
+Serialization: Joblib / Pickle
 
-### 3. Train the model
+👨‍💻 Author
+Ömer Cem Tanrıkulu - Computer Engineering Student
 
-```bash
-python src/train.py
-```
-
-This will:
-- Load and preprocess the data
-- Train Linear Regression, Ridge, Lasso, ElasticNet, and XGBoost models
-- Build an averaging ensemble (XGBoost + Lasso)
-- Save the best model, scaler, and metadata to `models/`
-
-### 4. Make predictions (CLI)
-
-```bash
-python src/predict.py
-```
-
-### 5. Launch Streamlit app
-
-```bash
-streamlit run app/app.py
-```
-
-## Models
-
-| Model | Description |
-|---|---|
-| Linear Regression | Baseline OLS |
-| Ridge (L2) | Regularized with GridSearch alpha tuning |
-| Lasso (L1) | Feature selection via L1 penalty |
-| ElasticNet (L1+L2) | Combined regularization |
-| XGBoost | Gradient boosting with hyperparameter search |
-| Averaged Ensemble | Mean of XGBoost + Lasso predictions |
-
-## Dataset
-
-- **Source:** UCI Machine Learning Repository — Auto MPG
-- **Samples:** 398 vehicles
-- **Target:** MPG (Miles Per Gallon)
-- **Features:** Cylinders, Displacement, Horsepower, Weight, Acceleration, Model Year, Origin
-
-## License
-
-This project is for educational purposes.
+🔗 LinkedIn
+🔗 GitHub
+🔗 Kaggle
