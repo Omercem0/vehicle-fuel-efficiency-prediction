@@ -1,4 +1,4 @@
-# 🏎️ AutoMPG Predictor - AI-Driven Fuel Efficiency Analysis
+#  AutoMPG Predictor - AI-Driven Fuel Efficiency Analysis
 
 AutoMPG Predictor is an end-to-end Machine Learning web application designed to predict the fuel efficiency (Miles Per Gallon) of vehicles based on technical specifications. The project leverages advanced regression techniques and is deployed using a modular architecture.
 
@@ -76,6 +76,6 @@ ml-project/
 
 **Ömer Cem Tanrıkulu** - Computer Engineering Student
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/LINKEDIN_KULLANICI_ADINIZ)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin)](https://linkedin.com/in/omercemtanrikulu/)
 [![GitHub](https://img.shields.io/badge/GitHub-black?logo=github)](https://github.com/Omercem0)
-[![Kaggle](https://img.shields.io/badge/Kaggle-blue?logo=kaggle)](https://kaggle.com/KAGGLE_KULLANICI_ADINIZ)
+[![Kaggle](https://img.shields.io/badge/Kaggle-blue?logo=kaggle)](https://kaggle.com/omercemtanrikulu)
