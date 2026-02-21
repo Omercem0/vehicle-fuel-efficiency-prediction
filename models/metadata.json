@@ -1,0 +1,21 @@
+{
+  "best_model": "XGBoost",
+  "mse": 0.010228056680581146,
+  "mae": 0.0708087980814789,
+  "r2": 0.8823202492470137,
+  "feature_columns": [
+    "Displacement",
+    "Horsepower",
+    "Weight",
+    "Acceleration",
+    "Model Year",
+    "Cylinders_3",
+    "Cylinders_4",
+    "Cylinders_5",
+    "Cylinders_6",
+    "Cylinders_8",
+    "Origin_1",
+    "Origin_2",
+    "Origin_3"
+  ]
+}
